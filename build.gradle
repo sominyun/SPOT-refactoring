@@ -44,6 +44,7 @@ project(':Api-Module') {
     jar { enabled = false }
     dependencies {
         implementation project(':Domain-Module') //컴파일 시 Domain-Module 로딩
+        implementation project(":Storage-Module") // storage 모듈 의존성 추가
 
         //web
         implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -53,9 +54,6 @@ project(':Api-Module') {
 
         //jdbc
         implementation 'org.springframework.boot:spring-boot-starter-jdbc'
-
-        //jpa
-        implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
         // h2
         runtimeOnly 'com.h2database:h2'
