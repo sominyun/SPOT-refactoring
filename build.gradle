@@ -52,7 +52,7 @@ project(':Api-Module') {
         // Validation
         implementation 'org.springframework.boot:spring-boot-starter-validation'
 
-        //jdbc
+        //jdbc //@Transactional
         implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 
         // h2
