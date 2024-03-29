@@ -1,0 +1,5 @@
+rootProject.name = 'SPOT_refactoring'
+
+include 'Api-Module'
+include 'Domain-Module'
+include 'Storage-Module'
